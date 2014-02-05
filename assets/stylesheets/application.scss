@@ -42,7 +42,7 @@ body {
     background-image: url(../images/background-1.jpg);
     background-size: cover;
     background-position: center center;
-    -webkit-filter: blur(10px) grayscale(1) sepia(.5);
+    -webkit-filter: blur(20px) grayscale(1) sepia(.3);
     z-index: -1;
   }
 }
@@ -67,7 +67,7 @@ body {
     float: right;
     @include BorderBox();
     padding: 10px;
-    nav {
+    .tabs {
       width: 100%;
       margin-bottom: 10px;
       button {
@@ -89,7 +89,7 @@ body {
         @include clearfix();
       }
     }
-    .content {
+    .current-tab {
       background-color: rgba(#fff, 0.8);
       width: 100%;
       border-radius: 5px;
